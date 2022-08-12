@@ -4,26 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductComponent } from './pages/product/product.component';
-import { NavigationComponent } from './components/navigation/navigation.component';
-import { AboutComponent } from './pages/about/about.component';
-import { NewsComponent } from './pages/news/news.component';
-import { ContactsComponent } from './pages/contacts/contacts.component';
+import { HeaderComponent } from './main/header/header.component';
+import { AppPagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
-    NavigationComponent,
-    AboutComponent,
-    NewsComponent,
-    ContactsComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AppPagesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
