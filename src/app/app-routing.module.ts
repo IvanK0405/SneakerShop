@@ -4,10 +4,11 @@ import {ProductComponent} from './pages/products/products.component';
 import {AboutComponent} from './pages/about/about.component';
 import {ContactsComponent} from './pages/contacts/contacts.component';
 import {NewsComponent} from './pages/news/news.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 const routes: Routes = [
-  { path: '', component: ProductComponent},
+  { path: '', component: HomeComponent},
   { path: 'products', component: ProductComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contacts', component: ContactsComponent },

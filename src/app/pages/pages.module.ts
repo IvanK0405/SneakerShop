@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 import { AboutComponent } from "./about/about.component";
 import { ContactsComponent } from "./contacts/contacts.component";
 import { NewsComponent } from "./news/news.component";
@@ -12,7 +13,7 @@ import { ProductComponent } from "./products/products.component";
         ContactsComponent
     ],
     bootstrap: [ ProductComponent ],
-    imports: [],
+    imports: [ BrowserModule,],
     exports: [],
     providers: []
 })
