@@ -4,13 +4,15 @@ import { AboutComponent } from "./about/about.component";
 import { ContactsComponent } from "./contacts/contacts.component";
 import { NewsComponent } from "./news/news.component";
 import { ProductComponent } from "./products/products.component";
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
     declarations: [
         ProductComponent,
         AboutComponent,
         NewsComponent,
-        ContactsComponent
+        ContactsComponent,
+        LoginComponent
     ],
     bootstrap: [ ProductComponent ],
     imports: [ BrowserModule,],
